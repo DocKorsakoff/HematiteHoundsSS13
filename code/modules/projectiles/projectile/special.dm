@@ -155,8 +155,7 @@
 	muzzle_type = null
 
 /obj/item/projectile/bullet/tranq/New()
-	reagents = ("stoxin",  3)
-	reagents.my_atom = src
+	reagents.add_reagent("stoxin", 3)
 
 /obj/item/projectile/bullet/tranq/on_hit(var/atom/target, var/blocked = 0, var/def_zone = null)
 	if(blocked < 100 && isliving(target))
