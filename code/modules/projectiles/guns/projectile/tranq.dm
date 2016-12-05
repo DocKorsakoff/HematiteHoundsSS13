@@ -1,6 +1,5 @@
 /obj/item/projectile/bullet/tranq
 	name = "bullet"
-	icon_state = "dart"
 	damage = 2
 	sharp = 1
 	embed = 1
@@ -23,19 +22,13 @@
 /obj/item/ammo_casing/tranq
 	name = "9mm tranq"
 	desc = "A special green-tipped 9mm parabellum round, designed to put a target to sleep for a short amount of time."
-	icon_state = "dart"
 	caliber = "9mm"
 	projectile_type = /obj/item/projectile/bullet/tranq
-	leaves_residue = 0
-
-/obj/item/ammo_casing/tranq/expend()
-	qdel(src)
 
 /obj/item/ammo_magazine/tranq
 	name = "tranq cartridge"
 	desc = "A rack of hollow darts."
-	icon_state = "darts"
-	item_state = "rcdammo"
+	icon_state = "9x19p"
 	mag_type = MAGAZINE
 	caliber = "9mm"
 	ammo_type = /obj/item/ammo_casing/tranq
