@@ -149,3 +149,7 @@
 	armor = list(melee = 65, bullet = 55, laser = 35,energy = 20, bomb = 30, bio = 30, rad = 30)
 	siemens_coefficient = 0.9
 
+/obj/item/clothing/head/beret/hematite
+	name = "mercenary beret"
+	desc = "A stylish Hematite Hounds maroon beret. The symbol of a hound is emblazed on the front."
+	icon_state = "hematite"
