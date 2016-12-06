@@ -148,11 +148,12 @@
 	damage = 2
 	sharp = 1
 	embed = 0
-	volume = 3
+	var/reagent_amount = 3
 	kill_count = 15 //shorter range
 	unacidable = 1
 
 /obj/item/projectile/bullet/tranq/New()
+	reagents = new/datum/reagents(reagent_amount)
 	reagents.add_reagent("stoxin", 3)
 
 /obj/item/projectile/bullet/tranq/on_hit(var/atom/target, var/blocked = 0, var/def_zone = null)
