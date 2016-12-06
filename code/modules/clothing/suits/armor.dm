@@ -255,6 +255,30 @@
 		holster.holster(W, usr)
 	else
 		holster.unholster(usr)
+		
+/obj/item/clothing/suit/armor/hematite
+	name = "mercenary tactical vest"
+	desc = "A heavy ballistic vest reinforced with extended coverage. Maroon highlights."
+	icon_state = "hematite_heavyvest"
+	item_state = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	armor = list(melee = 50, bullet = 40, laser = 25, energy = 25, bomb = 20, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/storage/vest/hematite
+	name = "mercenary light infantry vest"
+	desc = "A light vest with additional pouches for storage. Maroon trim."
+	icon_state = "hematite_lightvest"
+	item_state = "armor"
+	armor = list(melee = 40, bullet = 20, laser = 35, energy = 35, bomb = 10, bio = 0, rad = 0)
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	item_flags = THICKMATERIAL
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = UPPER_TORSO|LOWER_TORSO
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
+	siemens_coefficient = 0.6
+
 */
 
 //Non-hardsuit ERT armor.
