@@ -169,12 +169,5 @@
 	caliber = "9mm"
 	projectile_type = /obj/item/projectile/bullet/tranq
 
-/obj/item/ammo_magazine/tranq
-	name = "tranq cartridge"
-	desc = "A rack of hollow darts."
-	icon_state = "9x19p"
-	mag_type = MAGAZINE
-	caliber = "9mm"
+/obj/item/ammo_magazine/mc9mm/tranq
 	ammo_type = /obj/item/ammo_casing/tranq
-	max_ammo = 8
-	multiple_sprites = 1
