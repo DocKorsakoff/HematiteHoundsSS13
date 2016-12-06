@@ -95,6 +95,17 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 5, TECH_PHORON = 4)
 	projectile_type = /obj/item/projectile/energy/phoron
+	
+/obj/item/weapon/gun/energy/patriot
+	name = "Patriot"
+	desc = "The Patriot. An assault pistol developed for The Boss. The feeder mechanism inside the drum magazine forms an "∞" shape. The magazine is welded to the gun."
+	icon_state = "wt550"
+	item_state = "wt550"
+	max_shots = 100
+	charge_cost = null
+	w_class = ITEM_SIZE_NORMAL
+	projectile_type = /obj/item/projectile/bullet/pistol/medium
+	accuracy = -1
 
 /* Staves */
 
