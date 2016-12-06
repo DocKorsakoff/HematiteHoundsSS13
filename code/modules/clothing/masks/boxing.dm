@@ -49,4 +49,4 @@
 	name = "mercenary balaclava"
 	desc = "Won't protect you from the elements of the battlefield, but might protect you from identification."
 	icon_state = "hematite_balaclava"
-	item_state = "hematite_balaclava"
+	item_state = "balaclava"
