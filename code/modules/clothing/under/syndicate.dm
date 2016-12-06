@@ -26,4 +26,10 @@
 	siemens_coefficient = 1
 	has_sensor = SUIT_HAS_SENSORS
 
-
+/obj/item/clothing/under/syndicate/hematite_standard
+	name = "mercenary fatigues"
+	desc = "Standard issue Hematite Hounds uniform. Their proud symbol is emblazed on the left shoulder's pad."
+	worn_state = "hematite"
+	has_sensor = 0
+	armor = list(melee = 10, bullet = 10, laser = 10,energy = 0, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
