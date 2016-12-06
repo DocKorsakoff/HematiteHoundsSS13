@@ -142,3 +142,32 @@
 	damage_type = HALLOSS
 	muzzle_type = /obj/effect/projectile/bullet/muzzle
 
+
+/obj/item/projectile/bullet/tranq
+	name = "bullet"
+	damage = 2
+	sharp = 1
+	embed = 0
+	var/reagent_amount = 3
+	kill_count = 15 //shorter range
+	unacidable = 1
+
+/obj/item/projectile/bullet/tranq/New()
+	reagents = new/datum/reagents(reagent_amount)
+	reagents.add_reagent("stoxin", 3)
+
+/obj/item/projectile/bullet/tranq/on_hit(var/atom/target, var/blocked = 0, var/def_zone = null)
+	if(blocked < 100 && isliving(target))
+		var/mob/living/L = target
+		if(L.can_inject(null, def_zone))
+			reagents.trans_to_mob(L, reagent_amount, CHEM_BLOOD)
+
+/obj/item/ammo_casing/tranq
+	name = "9mm tranq"
+	desc = "A special green-tipped 9mm parabellum round, designed to put a target to sleep for a short amount of time."
+	caliber = "9mm"
+	projectile_type = /obj/item/projectile/bullet/tranq
+
+/obj/item/ammo_magazine/mc9mm/tranq
+	name = "magazine (9mm tranq)"
+	ammo_type = /obj/item/ammo_casing/tranq
