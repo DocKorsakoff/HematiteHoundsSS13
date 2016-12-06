@@ -113,6 +113,12 @@
 /obj/item/weapon/gun/projectile/pistol/flash
 	name = "holdout signal pistol"
 	magazine_type = /obj/item/ammo_magazine/mc9mm/flash
+	
+/obj/item/weapon/gun/projectile/pistol/tranq
+	name = "tranq pistol"
+	desc = "The Mk22 Hush Puppy. A compact, semi-automatic pistol designed to be silenced and fire tranquilizer rounds. Uses 9mm tranq."
+	magazine_type = /obj/item/ammo_magazine/mc9mm/tranq
+	allowed_magazines = /obj/item/ammo_magazine/mc9mm/tranq
 
 /obj/item/weapon/gun/projectile/pistol/attack_hand(mob/user as mob)
 	if(user.get_inactive_hand() == src)
