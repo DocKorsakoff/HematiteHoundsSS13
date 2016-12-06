@@ -147,11 +147,10 @@
 	name = "bullet"
 	damage = 2
 	sharp = 1
-	embed = 1
+	embed = 0
 	volume = 3
 	kill_count = 15 //shorter range
 	unacidable = 1
-	muzzle_type = null
 
 /obj/item/projectile/bullet/tranq/New()
 	reagents.add_reagent("stoxin", 3)
