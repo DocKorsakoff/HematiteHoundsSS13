@@ -148,10 +148,9 @@
 	damage = 2
 	sharp = 1
 	embed = 1
-	var/reagent_amount = 3
+	volume = 3
 	kill_count = 15 //shorter range
 	unacidable = 1
-
 	muzzle_type = null
 
 /obj/item/projectile/bullet/tranq/New()
@@ -170,4 +169,5 @@
 	projectile_type = /obj/item/projectile/bullet/tranq
 
 /obj/item/ammo_magazine/mc9mm/tranq
+	name = "magazine (9mm tranq)"
 	ammo_type = /obj/item/ammo_casing/tranq
